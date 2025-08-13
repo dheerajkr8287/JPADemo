@@ -24,3 +24,15 @@ public interface StudentRepo extends JpaRepository<Student,Integer> {
     @Query(value = "select * from students",nativeQuery = true)
    public List<Student> getAllStudentData();
 }
+
+
+/*
+👉 What it is:
+An interface that extends JpaRepository or CrudRepository.
+
+👉 Why we use it:
+
+It provides methods to perform CRUD operations on entities.
+
+Spring Data automatically creates implementations at runtime.
+ */

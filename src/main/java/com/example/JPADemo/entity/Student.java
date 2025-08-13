@@ -2,6 +2,20 @@ package com.example.JPADemo.entity;
 
 import jakarta.persistence.*;
 
+/*
+ Entity (Model)
+👉 What it is:
+A class annotated with @Entity, representing a table in the database.
+
+👉 Why we use it:
+
+It maps Java objects to database rows using JPA/Hibernate.
+
+It reflects the database structure (columns, types, constraints).
+
+It is used internally by the application to interact with the database.
+ */
+
 @Entity //this is class that mapping with the db class
 @Table(name = "students") //this is used when class name is different from the db table name
 public class Student {
